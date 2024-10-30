@@ -12,10 +12,13 @@ const App = () => {
 
   return (
   <>
-    <div className='flex justify-center items-center text-white font-bold backdrop-blur-sm'><h1 className='text-5xl text-gray-700 shadow-gray-50 text-center mb-4 mt-4 gap-3'>A SamFuturistic Presents  <br /><br />🩶 </h1>
+    
+      <h1 className='bg-transparent text-slate-800 font-bold font-sans text-5xl text-opacity-40 text-center mb-4 mt-4 gap-3 -z-10'>
+        A SamFuturistic Presents  
+        <br /><br />🩶 </h1>
    
-    </div>
-  <Canvas flat camera={{fov : 22}}>
+
+  <Canvas flat camera={{fov : 22}} className='z-20'>
     <OrbitControls />
     <ambientLight />
    <Scene />
